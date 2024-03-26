@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "fair-metadata"
+version = "0.1.0"
+description = ""
+authors = ["Reema Gupta <reema.gupta@lmu.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sphinx = "^7.2.6"
+sphinx-jsonschema = "^1.19.1"
+linkml = "^1.7.6"
+schema-automator = "^0.5.1"
+jupyter-book = "^1.0.0"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

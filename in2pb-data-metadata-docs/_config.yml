@@ -1,0 +1,9 @@
+title: In2PrimateBrains Data and Metadata Documentation
+author: Reema Gupta
+logo: images/in2pb_logo.png
+execute:
+  execute_notebooks: force
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib

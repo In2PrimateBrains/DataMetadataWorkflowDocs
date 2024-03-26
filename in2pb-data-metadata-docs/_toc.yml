@@ -1,0 +1,45 @@
+# In _toc.yml
+format: jb-book
+root: landing
+parts:
+  - caption: Introduction
+    chapters:
+      - file: part-introduction/ch1-intro
+      - file: part-introduction/ch2-fair-guiding-principles
+      - file: part-introduction/ch3-organization-standards
+
+  - caption: FAIR Metadata
+    chapters:
+      - file: part-metadata/ch1-intro-metadata
+      - file: part-metadata/ch2-controlled-vocabulary-schemas
+      - file: part-metadata/ch3-cedar-metadata-schemas
+        sections:
+          - file: schema-markdowns/Acquisition System Metadata.md
+          - file: schema-markdowns/Channel Metadata.md
+          # - file: schema-markdowns/Contact Metadata (DEPRECATED).md
+          - file: schema-markdowns/Dataset Experiment Info.md
+          - file: schema-markdowns/Dataset General Metadata.md
+          - file: schema-markdowns/Electrode Metadata.md
+          - file: schema-markdowns/Event Codes Metadata.md
+          - file: schema-markdowns/Eye Tracking Metadata.md
+          - file: schema-markdowns/In2PB Metadata.md
+          - file: schema-markdowns/Probe Metadata.md
+          - file: schema-markdowns/Session Metadata.md
+          - file: schema-markdowns/Subject-General.md
+          - file: schema-markdowns/Subject-Surgery.md
+          - file: schema-markdowns/Subject-Training.md
+          - file: schema-markdowns/Task Metadata.md
+          - file: schema-markdowns/Trial Metadata.md
+          - file: schema-markdowns/Video Recording Metadata.md
+
+  - caption: FAIR Data
+    chapters:
+      - file: part-data/ch1-intro-data
+
+  - caption: Data Sharing
+    chapters:
+      - file: part-data-sharing/ch1-intro-data-sharing
+
+  - caption: Data Reuse
+    chapters:
+      - file: part-data-reuse/ch1-intro-data-reuse

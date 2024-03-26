@@ -1,0 +1,9 @@
+# Data and metadata management workflow for In2PB
+
+Recent advances in electrophysiology enable simultaneous recording of hundreds of channels while capturing intricate behaviors. However, the resulting complex datasets are often underutilized due to insufficient solutions for data management and sharing. We address these obstacles within the EU-funded multi-lab collaboration In2PrimateBrains, which investigates brain networks in non-human primates. We utilize a set of modular open-source tools, methods, and services to achieve workflows that balance standardization with adaptability.
+**Metadata collection** using the lightweight odML metadata format allows automated data annotation and context provision in human- and machine-readable manner. Standardization is achieved by controlled terminologies and metadata schemas built upon existing community efforts, including BIDS, BEP032 and openMINDS.
+The **common data representation** offered by Neo is used to interface with the variety of data formats used in participating labs. **Data storage** in the NIX data format ensures accessibility and facilitates comprehensive data organization and integration of metadata.
+For **data sharing**, we use GIN, a collaborative data platform. GIN provides version control for research data, precise access control, collaborative capabilities, and data publication services.
+The data curated with this workflow is interoperable for further processing by generic analysis scripts, tools, and services. This workflow demonstrates the utilization of an open ecosystem of tools, methods, and services aimed at enhancing the FAIRness of research data. 
+
+Funding: EU MSCA-ITN In2PrimateBrains grant n°956669 H2020.
