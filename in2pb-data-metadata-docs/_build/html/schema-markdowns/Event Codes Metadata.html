@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -179,7 +179,7 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../part-introduction/ch1-intro.html">Data and Metadata Management Workflow for In2PB</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part-introduction/ch2-fair-guiding-principles.html">The FAIR Guiding Principles [add reference]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part-introduction/ch2-fair-guiding-principles.html">The FAIR Guiding Principles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part-introduction/ch3-organization-standards.html">Why do we need organization and standards?</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">FAIR Metadata</span></p>
@@ -187,17 +187,17 @@
 <li class="toctree-l1"><a class="reference internal" href="../part-metadata/ch1-intro-metadata.html">Metadata Workflow for In2PB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part-metadata/ch2-controlled-vocabulary-schemas.html">Controlled Vocabulary and Schemas</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../part-metadata/ch3-cedar-metadata-schemas.html">CEDAR Metadata Schemas</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="Acquisition%20System%20Metadata.html">Data acquisition system metadata element schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Acquisition%20System%20Metadata.html">Acquisition system metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Channel%20Metadata.html">Channel metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Dataset%20Experiment%20Info.html">Dataset experiment info element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Dataset%20General%20Metadata.html">Dataset general metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Electrode%20Metadata.html">Electrode metadata element schema</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Event codes metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Eye%20Tracking%20Metadata.html">Eye tracking metadata element schema</a></li>
-<li class="toctree-l2"><a class="reference internal" href="In2PB%20Metadata.html">In2pb info element schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="In2PB%20Metadata.html">In2pb metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Probe%20Metadata.html">Probe metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Session%20Metadata.html">Session metadata element schema</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Subject-General.html">Subject element schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Subject-General.html">Subject-general element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Subject-Surgery.html">Subject-surgery element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Subject-Training.html">Subject-training element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Task%20Metadata.html">Task metadata element schema</a></li>
@@ -381,7 +381,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="event-codes-metadata-element-schema">
 <h1>Event codes metadata element schema<a class="headerlink" href="#event-codes-metadata-element-schema" title="Link to this heading">#</a></h1>
-<p><strong>Description:</strong> Event codes metadata element schema generated by the CEDAR Template Editor 2.6.54</p>
+<p><strong>Description:</strong> Event codes metadata element schema generated by the CEDAR Template Editor 2.6.56</p>
 <section id="code">
 <h2>Code<a class="headerlink" href="#code" title="Link to this heading">#</a></h2>
 <p><strong>Label:</strong> code</p>
@@ -469,9 +469,9 @@ document.write(`
 <span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;code&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The event/behavioural code used during the experimental run.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T09:03:47-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:10:20-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T09:03:47-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:10:20-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
@@ -570,9 +570,9 @@ document.write(`
 <span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;codeName&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The event/behavioural code name, corresponding to the code used during the experimental run.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T09:03:47-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:10:20-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T09:03:47-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:10:20-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
@@ -671,9 +671,9 @@ document.write(`
 <span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;codeDescription&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A short human-readable description of the code.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T09:03:47-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:10:20-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T09:03:47-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:10:20-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>

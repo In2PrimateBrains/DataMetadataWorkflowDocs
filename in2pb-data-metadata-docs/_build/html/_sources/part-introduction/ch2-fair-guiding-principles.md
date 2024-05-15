@@ -1,4 +1,4 @@
-# The FAIR Guiding Principles [add reference]
+# The FAIR Guiding Principles
 
 To be Findable:
 

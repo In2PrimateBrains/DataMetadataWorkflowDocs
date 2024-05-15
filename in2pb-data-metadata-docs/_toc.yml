@@ -14,23 +14,24 @@ parts:
       - file: part-metadata/ch2-controlled-vocabulary-schemas
       - file: part-metadata/ch3-cedar-metadata-schemas
         sections:
-          - file: schema-markdowns/Acquisition System Metadata.md
-          - file: schema-markdowns/Channel Metadata.md
-          # - file: schema-markdowns/Contact Metadata (DEPRECATED).md
-          - file: schema-markdowns/Dataset Experiment Info.md
-          - file: schema-markdowns/Dataset General Metadata.md
-          - file: schema-markdowns/Electrode Metadata.md
-          - file: schema-markdowns/Event Codes Metadata.md
-          - file: schema-markdowns/Eye Tracking Metadata.md
-          - file: schema-markdowns/In2PB Metadata.md
-          - file: schema-markdowns/Probe Metadata.md
-          - file: schema-markdowns/Session Metadata.md
-          - file: schema-markdowns/Subject-General.md
-          - file: schema-markdowns/Subject-Surgery.md
-          - file: schema-markdowns/Subject-Training.md
-          - file: schema-markdowns/Task Metadata.md
-          - file: schema-markdowns/Trial Metadata.md
-          - file: schema-markdowns/Video Recording Metadata.md
+          - file: schema-markdowns/acquisiton-system-element.md
+          - file: schema-markdowns/author-element.md
+          - file: schema-markdowns/channel-element.md
+          - file: schema-markdowns/dataset-experiment-element.md
+          - file: schema-markdowns/dataset-general-element.md
+          - file: schema-markdowns/electrode-element.md
+          - file: schema-markdowns/event-codes-element.md
+          - file: schema-markdowns/eye-tracking-element.md
+          - file: schema-markdowns/in2pb-element.md
+          - file: schema-markdowns/probe-element.md
+          - file: schema-markdowns/reference-element.md
+          - file: schema-markdowns/session-element.md
+          - file: schema-markdowns/subject-general-element.md
+          - file: schema-markdowns/subject-surgery-element.md
+          - file: schema-markdowns/subject-training-element.md
+          - file: schema-markdowns/task-element.md
+          - file: schema-markdowns/trial-element.md
+          - file: schema-markdowns/video-recording-element.md
 
   - caption: FAIR Data
     chapters:

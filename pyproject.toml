@@ -13,6 +13,7 @@ linkml = "^1.7.6"
 schema-automator = "^0.5.1"
 jupyter-book = "^1.0.0"
 python-dotenv = "^1.0.1"
+ghp-import = "^2.1.0"
 
 
 [build-system]

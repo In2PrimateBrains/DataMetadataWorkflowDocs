@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -179,7 +179,7 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../part-introduction/ch1-intro.html">Data and Metadata Management Workflow for In2PB</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part-introduction/ch2-fair-guiding-principles.html">The FAIR Guiding Principles [add reference]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part-introduction/ch2-fair-guiding-principles.html">The FAIR Guiding Principles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part-introduction/ch3-organization-standards.html">Why do we need organization and standards?</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">FAIR Metadata</span></p>
@@ -187,17 +187,17 @@
 <li class="toctree-l1"><a class="reference internal" href="../part-metadata/ch1-intro-metadata.html">Metadata Workflow for In2PB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part-metadata/ch2-controlled-vocabulary-schemas.html">Controlled Vocabulary and Schemas</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../part-metadata/ch3-cedar-metadata-schemas.html">CEDAR Metadata Schemas</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="Acquisition%20System%20Metadata.html">Data acquisition system metadata element schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Acquisition%20System%20Metadata.html">Acquisition system metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Channel%20Metadata.html">Channel metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Dataset%20Experiment%20Info.html">Dataset experiment info element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Dataset%20General%20Metadata.html">Dataset general metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Electrode%20Metadata.html">Electrode metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Event%20Codes%20Metadata.html">Event codes metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Eye%20Tracking%20Metadata.html">Eye tracking metadata element schema</a></li>
-<li class="toctree-l2"><a class="reference internal" href="In2PB%20Metadata.html">In2pb info element schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="In2PB%20Metadata.html">In2pb metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Probe%20Metadata.html">Probe metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Session%20Metadata.html">Session metadata element schema</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Subject-General.html">Subject element schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Subject-General.html">Subject-general element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Subject-Surgery.html">Subject-surgery element schema</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Subject-training element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Task%20Metadata.html">Task metadata element schema</a></li>
@@ -367,10 +367,10 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subject-identifier">Subject Identifier</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-type">Training Type</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-date">Start Date</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-date">End Date</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coach">Coach</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-comments">Additional Comments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-start-date">Training Start Date</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-end-date">Training End Date</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-coaches">Training Coaches</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-additional-comments">Training Additional Comments</a></li>
 </ul>
             </nav>
         </div>
@@ -384,7 +384,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="subject-training-element-schema">
 <h1>Subject-training element schema<a class="headerlink" href="#subject-training-element-schema" title="Link to this heading">#</a></h1>
-<p><strong>Description:</strong> Subject-training element schema generated by the CEDAR Template Editor 2.6.54</p>
+<p><strong>Description:</strong> Subject-training element schema generated by the CEDAR Template Editor 2.6.56</p>
 <section id="subject-identifier">
 <h2>Subject Identifier<a class="headerlink" href="#subject-identifier" title="Link to this heading">#</a></h2>
 <p><strong>Label:</strong> subjectID</p>
@@ -472,9 +472,9 @@ document.write(`
 <span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;subjectID&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Identifier of the subject who was trained.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:19-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:08:45-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:19-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:08:45-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
@@ -488,7 +488,7 @@ document.write(`
 </section>
 <section id="training-type">
 <h2>Training Type<a class="headerlink" href="#training-type" title="Link to this heading">#</a></h2>
-<p><strong>Label:</strong> type</p>
+<p><strong>Label:</strong> trainingType</p>
 <p><strong>Description:</strong> Type of training being described.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> textfield</p>
@@ -529,8 +529,8 @@ document.write(`
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;type field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;type field schema generated by the CEDAR Template Editor 2.6.52&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;trainingType field schema&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;trainingType field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;valueRecommendationEnabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
@@ -572,11 +572,11 @@ document.write(`
 <span class="w">  </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="s2">&quot;@value&quot;</span>
 <span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;type&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;trainingType&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Type of training being described.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:19-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:08:45-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:19-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:08:45-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
@@ -588,9 +588,9 @@ document.write(`
 </div>
 </details>
 </section>
-<section id="start-date">
-<h2>Start Date<a class="headerlink" href="#start-date" title="Link to this heading">#</a></h2>
-<p><strong>Label:</strong> start</p>
+<section id="training-start-date">
+<h2>Training Start Date<a class="headerlink" href="#training-start-date" title="Link to this heading">#</a></h2>
+<p><strong>Label:</strong> trainingStartDate</p>
 <p><strong>Description:</strong> Date of the start of the training.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> temporal</p>
@@ -631,8 +631,8 @@ document.write(`
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;start field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;start field schema generated by the CEDAR Template Editor 2.6.52&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;trainingStartDate field schema&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;trainingStartDate field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;temporal&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;temporalGranularity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;day&quot;</span>
@@ -675,15 +675,15 @@ document.write(`
 <span class="w">  </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="s2">&quot;@value&quot;</span>
 <span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;start&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;trainingStartDate&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Date of the start of the training.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:19-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:08:45-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:19-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:08:45-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Start Date&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Training Start Date&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/f7727c61-c7d5-4b4b-872b-c0f2a376d954&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
 <span class="p">}</span>
@@ -691,9 +691,9 @@ document.write(`
 </div>
 </details>
 </section>
-<section id="end-date">
-<h2>End Date<a class="headerlink" href="#end-date" title="Link to this heading">#</a></h2>
-<p><strong>Label:</strong> end</p>
+<section id="training-end-date">
+<h2>Training End Date<a class="headerlink" href="#training-end-date" title="Link to this heading">#</a></h2>
+<p><strong>Label:</strong> trainingEndDate</p>
 <p><strong>Description:</strong> Date of the end of the training.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> temporal</p>
@@ -734,8 +734,8 @@ document.write(`
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;end field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;end field schema generated by the CEDAR Template Editor 2.6.52&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;trainingEndDate field schema&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;trainingEndDate field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;temporal&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;temporalGranularity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;day&quot;</span>
@@ -778,15 +778,15 @@ document.write(`
 <span class="w">  </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="s2">&quot;@value&quot;</span>
 <span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;end&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;trainingEndDate&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Date of the end of the training.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:19-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:08:45-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:19-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:08:45-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;End Date&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Training End Date&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/052fad9a-5ce4-4a3c-9611-e53055a70933&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
 <span class="p">}</span>
@@ -794,9 +794,9 @@ document.write(`
 </div>
 </details>
 </section>
-<section id="coach">
-<h2>Coach<a class="headerlink" href="#coach" title="Link to this heading">#</a></h2>
-<p><strong>Label:</strong> coach</p>
+<section id="training-coaches">
+<h2>Training Coaches<a class="headerlink" href="#training-coaches" title="Link to this heading">#</a></h2>
+<p><strong>Label:</strong> trainingCoaches</p>
 <p><strong>Description:</strong> List of people responsible for training of the subject.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> Not specified</p>
@@ -840,8 +840,8 @@ document.write(`
 <span class="w">        </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@id&quot;</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;coach field schema&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;coach field schema generated by the CEDAR Template Editor 2.6.52&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;trainingCoaches field schema&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;trainingCoaches field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">      </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span>
 <span class="w">    </span><span class="p">},</span>
@@ -883,14 +883,14 @@ document.write(`
 <span class="w">      </span><span class="s2">&quot;@value&quot;</span>
 <span class="w">    </span><span class="p">],</span>
 <span class="w">    </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:19-07:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:08:45-07:00&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:19-07:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:08:45-07:00&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;coach&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;trainingCoaches&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;List of people responsible for training of the subject.&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Coach&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Training Coaches&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/9c0b9eb4-cc0a-43ba-9a0f-68328c6199e2&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
 <span class="w">  </span><span class="p">}</span>
@@ -899,9 +899,9 @@ document.write(`
 </div>
 </details>
 </section>
-<section id="additional-comments">
-<h2>Additional Comments<a class="headerlink" href="#additional-comments" title="Link to this heading">#</a></h2>
-<p><strong>Label:</strong> comment</p>
+<section id="training-additional-comments">
+<h2>Training Additional Comments<a class="headerlink" href="#training-additional-comments" title="Link to this heading">#</a></h2>
+<p><strong>Label:</strong> trainingComments</p>
 <p><strong>Description:</strong> Remarks on the training procedure.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> textfield</p>
@@ -942,8 +942,8 @@ document.write(`
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;comment field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;comment field schema generated by the CEDAR Template Editor 2.6.52&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;trainingComments field schema&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;trainingComments field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span>
 <span class="w">  </span><span class="p">},</span>
@@ -984,15 +984,15 @@ document.write(`
 <span class="w">  </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="s2">&quot;@value&quot;</span>
 <span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;comment&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;trainingComments&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Remarks on the training procedure.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:19-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:08:45-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:19-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:08:45-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Additional Comments&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Training Additional Comments&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/f73f6d0d-1f62-4b5a-8e32-83c489e39187&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
 <span class="p">}</span>
@@ -1068,10 +1068,10 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subject-identifier">Subject Identifier</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-type">Training Type</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-date">Start Date</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-date">End Date</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coach">Coach</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-comments">Additional Comments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-start-date">Training Start Date</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-end-date">Training End Date</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-coaches">Training Coaches</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-additional-comments">Training Additional Comments</a></li>
 </ul>
   </nav></div>
 

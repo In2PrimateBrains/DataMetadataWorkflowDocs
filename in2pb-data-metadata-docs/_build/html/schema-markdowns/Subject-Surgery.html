@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -61,7 +61,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Subject-training element schema" href="Subject-Training.html" />
-    <link rel="prev" title="Subject element schema" href="Subject-General.html" />
+    <link rel="prev" title="Subject-general element schema" href="Subject-General.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -179,7 +179,7 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../part-introduction/ch1-intro.html">Data and Metadata Management Workflow for In2PB</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part-introduction/ch2-fair-guiding-principles.html">The FAIR Guiding Principles [add reference]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part-introduction/ch2-fair-guiding-principles.html">The FAIR Guiding Principles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part-introduction/ch3-organization-standards.html">Why do we need organization and standards?</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">FAIR Metadata</span></p>
@@ -187,17 +187,17 @@
 <li class="toctree-l1"><a class="reference internal" href="../part-metadata/ch1-intro-metadata.html">Metadata Workflow for In2PB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part-metadata/ch2-controlled-vocabulary-schemas.html">Controlled Vocabulary and Schemas</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../part-metadata/ch3-cedar-metadata-schemas.html">CEDAR Metadata Schemas</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="Acquisition%20System%20Metadata.html">Data acquisition system metadata element schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Acquisition%20System%20Metadata.html">Acquisition system metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Channel%20Metadata.html">Channel metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Dataset%20Experiment%20Info.html">Dataset experiment info element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Dataset%20General%20Metadata.html">Dataset general metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Electrode%20Metadata.html">Electrode metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Event%20Codes%20Metadata.html">Event codes metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Eye%20Tracking%20Metadata.html">Eye tracking metadata element schema</a></li>
-<li class="toctree-l2"><a class="reference internal" href="In2PB%20Metadata.html">In2pb info element schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="In2PB%20Metadata.html">In2pb metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Probe%20Metadata.html">Probe metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Session%20Metadata.html">Session metadata element schema</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Subject-General.html">Subject element schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Subject-General.html">Subject-general element schema</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Subject-surgery element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Subject-Training.html">Subject-training element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Task%20Metadata.html">Task metadata element schema</a></li>
@@ -369,10 +369,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surgery-type">Surgery Type</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subject-weight">Subject Weight</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surgery-duration">Surgery Duration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surgeon">Surgeon</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hemisphere">Hemisphere</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anatomical-location">Anatomical Location</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">Comments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surgeon-names">Surgeon Names</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surgery-hemisphere">Surgery Hemisphere</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surgery-anatomical-location">Surgery Anatomical Location</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surgery-comments">Surgery Comments</a></li>
 </ul>
             </nav>
         </div>
@@ -386,7 +386,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="subject-surgery-element-schema">
 <h1>Subject-surgery element schema<a class="headerlink" href="#subject-surgery-element-schema" title="Link to this heading">#</a></h1>
-<p><strong>Description:</strong> Subject-surgery element schema generated by the CEDAR Template Editor 2.6.54</p>
+<p><strong>Description:</strong> Subject-surgery element schema generated by the CEDAR Template Editor 2.6.56</p>
 <section id="subject-identifier">
 <h2>Subject Identifier<a class="headerlink" href="#subject-identifier" title="Link to this heading">#</a></h2>
 <p><strong>Label:</strong> subjectID</p>
@@ -474,9 +474,9 @@ document.write(`
 <span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;subjectID&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Identifier of the subject on which the surgery was performed.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:36-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:09:02-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:36-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:09:02-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
@@ -494,7 +494,7 @@ document.write(`
 <p><strong>Description:</strong> Type of the surgery performed.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> textfield</p>
-<p><strong>Value Relation Links:</strong> <a class="reference external" href="http://omv.ontoware.org/2005/05/ontology#isOfType">Link</a> <details></p>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/6418bb40-f925-4700-a5be-6cc7a5d62dc6">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.metadatacenter.org/core/TemplateField&quot;</span><span class="p">,</span>
@@ -532,7 +532,7 @@ document.write(`
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeryType field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeryType field schema generated by the CEDAR Template Editor 2.6.54&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeryType field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;valueRecommendationEnabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
@@ -576,9 +576,9 @@ document.write(`
 <span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeryType&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Type of the surgery performed.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:36-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:09:02-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:36-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:09:02-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
@@ -592,7 +592,7 @@ document.write(`
 </section>
 <section id="subject-weight">
 <h2>Subject Weight<a class="headerlink" href="#subject-weight" title="Link to this heading">#</a></h2>
-<p><strong>Label:</strong> weight</p>
+<p><strong>Label:</strong> subjectWeight</p>
 <p><strong>Description:</strong> Weight of the subject at the start of surgery in kilograms.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> numeric</p>
@@ -634,8 +634,8 @@ document.write(`
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;weight field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;weight field schema generated by the CEDAR Template Editor 2.6.52&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;subjectWeight field schema&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;subjectWeight field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;numeric&quot;</span>
 <span class="w">  </span><span class="p">},</span>
@@ -666,11 +666,11 @@ document.write(`
 <span class="w">    </span><span class="s2">&quot;@value&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="s2">&quot;@type&quot;</span>
 <span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;weight&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;subjectWeight&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Weight of the subject at the start of surgery in kilograms.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:36-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:09:02-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:36-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:09:02-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
@@ -684,12 +684,12 @@ document.write(`
 </section>
 <section id="surgery-duration">
 <h2>Surgery Duration<a class="headerlink" href="#surgery-duration" title="Link to this heading">#</a></h2>
-<p><strong>Label:</strong> duration</p>
+<p><strong>Label:</strong> surgeryDuration</p>
 <p><strong>Description:</strong> Duration of the surgery in hours.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> numeric</p>
 <p><strong>Unit of Measure:</strong> Hours</p>
-<p><strong>Value Relation Links:</strong> <a class="reference external" href="http://schema.org/duration">Link</a> <details></p>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/530eb9f9-4391-49ba-a329-41e1e227f95c">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.metadatacenter.org/core/TemplateField&quot;</span><span class="p">,</span>
@@ -726,8 +726,8 @@ document.write(`
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;duration field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;duration field schema generated by the CEDAR Template Editor 2.6.52&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeryDuration field schema&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeryDuration field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;numeric&quot;</span>
 <span class="w">  </span><span class="p">},</span>
@@ -758,11 +758,11 @@ document.write(`
 <span class="w">    </span><span class="s2">&quot;@value&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="s2">&quot;@type&quot;</span>
 <span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;duration&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeryDuration&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Duration of the surgery in hours.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:36-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:09:02-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:36-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:09:02-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
@@ -774,13 +774,13 @@ document.write(`
 </div>
 </details>
 </section>
-<section id="surgeon">
-<h2>Surgeon<a class="headerlink" href="#surgeon" title="Link to this heading">#</a></h2>
-<p><strong>Label:</strong> surgeon</p>
+<section id="surgeon-names">
+<h2>Surgeon Names<a class="headerlink" href="#surgeon-names" title="Link to this heading">#</a></h2>
+<p><strong>Label:</strong> surgeonNames</p>
 <p><strong>Description:</strong> List of people responsible for the surgery.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> Not specified</p>
-<p><strong>Value Relation Links:</strong> <a class="reference external" href="http://purl.obolibrary.org/obo/ERO_0000398">Link</a> <details></p>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/febc2a2e-a839-431b-acc8-05b135f0accc">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;array&quot;</span><span class="p">,</span>
@@ -820,8 +820,8 @@ document.write(`
 <span class="w">        </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@id&quot;</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeon field schema&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeon field schema generated by the CEDAR Template Editor 2.6.54&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeonNames field schema&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeonNames field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">      </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span>
 <span class="w">    </span><span class="p">},</span>
@@ -863,14 +863,14 @@ document.write(`
 <span class="w">      </span><span class="s2">&quot;@value&quot;</span>
 <span class="w">    </span><span class="p">],</span>
 <span class="w">    </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:36-07:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:09:02-07:00&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:36-07:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:09:02-07:00&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeon&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeonNames&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;List of people responsible for the surgery.&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Surgeon&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Surgeon Names&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/aaced9c6-24b8-4dab-ab09-a2010d8f643f&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
 <span class="w">  </span><span class="p">}</span>
@@ -879,13 +879,13 @@ document.write(`
 </div>
 </details>
 </section>
-<section id="hemisphere">
-<h2>Hemisphere<a class="headerlink" href="#hemisphere" title="Link to this heading">#</a></h2>
-<p><strong>Label:</strong> hemisphere</p>
+<section id="surgery-hemisphere">
+<h2>Surgery Hemisphere<a class="headerlink" href="#surgery-hemisphere" title="Link to this heading">#</a></h2>
+<p><strong>Label:</strong> surgeryHemisphere</p>
 <p><strong>Description:</strong> Hemisphere on which the surgery was performed.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> textfield</p>
-<p><strong>Value Relation Links:</strong> <a class="reference external" href="http://purl.obolibrary.org/obo/UBERON_0001869">Link</a> <details></p>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/ad1d52a1-1310-4836-8eaf-09cbddf58f57">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.metadatacenter.org/core/TemplateField&quot;</span><span class="p">,</span>
@@ -922,8 +922,8 @@ document.write(`
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;hemisphere field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;hemisphere field schema generated by the CEDAR Template Editor 2.6.54&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeryHemisphere field schema&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeryHemisphere field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span>
 <span class="w">  </span><span class="p">},</span>
@@ -972,15 +972,15 @@ document.write(`
 <span class="w">      </span><span class="nt">&quot;format&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;uri&quot;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;hemisphere&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeryHemisphere&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hemisphere on which the surgery was performed.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:36-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:09:02-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:36-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:09:02-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hemisphere&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Surgery Hemisphere&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/0088c080-2738-4100-8df8-841f0946f98b&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
 <span class="p">}</span>
@@ -988,13 +988,13 @@ document.write(`
 </div>
 </details>
 </section>
-<section id="anatomical-location">
-<h2>Anatomical Location<a class="headerlink" href="#anatomical-location" title="Link to this heading">#</a></h2>
-<p><strong>Label:</strong> anatomicalLocation</p>
+<section id="surgery-anatomical-location">
+<h2>Surgery Anatomical Location<a class="headerlink" href="#surgery-anatomical-location" title="Link to this heading">#</a></h2>
+<p><strong>Label:</strong> surgeryAnatomicalLocation</p>
 <p><strong>Description:</strong> List of anatomical locations of the surgery.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> textfield</p>
-<p><strong>Value Relation Links:</strong> <a class="reference external" href="http://purl.obolibrary.org/obo/RO_0001015">Link</a> <details></p>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/d22578ef-3314-425b-8012-e62133a1737e">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.metadatacenter.org/core/TemplateField&quot;</span><span class="p">,</span>
@@ -1031,8 +1031,8 @@ document.write(`
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;anatomicalLocation field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;anatomicalLocation field schema generated by the CEDAR Template Editor 2.6.54&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeryAnatomicalLocation field schema&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeryAnatomicalLocation field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span>
 <span class="w">  </span><span class="p">},</span>
@@ -1073,15 +1073,15 @@ document.write(`
 <span class="w">  </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="s2">&quot;@value&quot;</span>
 <span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;anatomicalLocation&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeryAnatomicalLocation&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;List of anatomical locations of the surgery.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:36-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:09:02-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:36-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:09:02-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Anatomical Location&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Surgery Anatomical Location&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/85e5f52a-94c3-400e-92fd-18b9b78cba9b&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
 <span class="p">}</span>
@@ -1089,13 +1089,13 @@ document.write(`
 </div>
 </details>
 </section>
-<section id="comments">
-<h2>Comments<a class="headerlink" href="#comments" title="Link to this heading">#</a></h2>
-<p><strong>Label:</strong> comment</p>
+<section id="surgery-comments">
+<h2>Surgery Comments<a class="headerlink" href="#surgery-comments" title="Link to this heading">#</a></h2>
+<p><strong>Label:</strong> surgeryComments</p>
 <p><strong>Description:</strong> Remarks on the surgery.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> textfield</p>
-<p><strong>Value Relation Links:</strong> <a class="reference external" href="http://www.w3.org/2000/01/rdf-schema#comment">Link</a> <details></p>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/afbfc95f-1a38-49a7-95c8-1b67dc231417">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.metadatacenter.org/core/TemplateField&quot;</span><span class="p">,</span>
@@ -1132,8 +1132,8 @@ document.write(`
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;comment field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;comment field schema generated by the CEDAR Template Editor 2.6.52&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeryComments field schema&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeryComments field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span>
 <span class="w">  </span><span class="p">},</span>
@@ -1174,15 +1174,15 @@ document.write(`
 <span class="w">  </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="s2">&quot;@value&quot;</span>
 <span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;comment&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;surgeryComments&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Remarks on the surgery.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:36-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:09:02-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T07:20:36-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-13T04:09:02-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Comments&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Surgery Comments&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/968d9603-ada2-4783-9d3a-aa2b5c15f0ba&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
 <span class="p">}</span>
@@ -1228,7 +1228,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Subject element schema</p>
+        <p class="prev-next-title">Subject-general element schema</p>
       </div>
     </a>
     <a class="right-next"
@@ -1260,10 +1260,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surgery-type">Surgery Type</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subject-weight">Subject Weight</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surgery-duration">Surgery Duration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surgeon">Surgeon</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hemisphere">Hemisphere</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anatomical-location">Anatomical Location</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">Comments</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surgeon-names">Surgeon Names</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surgery-hemisphere">Surgery Hemisphere</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surgery-anatomical-location">Surgery Anatomical Location</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surgery-comments">Surgery Comments</a></li>
 </ul>
   </nav></div>
 

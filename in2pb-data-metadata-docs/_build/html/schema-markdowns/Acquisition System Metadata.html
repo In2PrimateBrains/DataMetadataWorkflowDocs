@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Data acquisition system metadata element schema &#8212; In2PrimateBrains Data and Metadata Documentation</title>
+    <title>Acquisition system metadata element schema &#8212; In2PrimateBrains Data and Metadata Documentation</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -179,7 +179,7 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../part-introduction/ch1-intro.html">Data and Metadata Management Workflow for In2PB</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part-introduction/ch2-fair-guiding-principles.html">The FAIR Guiding Principles [add reference]</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part-introduction/ch2-fair-guiding-principles.html">The FAIR Guiding Principles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part-introduction/ch3-organization-standards.html">Why do we need organization and standards?</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">FAIR Metadata</span></p>
@@ -187,17 +187,17 @@
 <li class="toctree-l1"><a class="reference internal" href="../part-metadata/ch1-intro-metadata.html">Metadata Workflow for In2PB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part-metadata/ch2-controlled-vocabulary-schemas.html">Controlled Vocabulary and Schemas</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../part-metadata/ch3-cedar-metadata-schemas.html">CEDAR Metadata Schemas</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Data acquisition system metadata element schema</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Acquisition system metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Channel%20Metadata.html">Channel metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Dataset%20Experiment%20Info.html">Dataset experiment info element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Dataset%20General%20Metadata.html">Dataset general metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Electrode%20Metadata.html">Electrode metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Event%20Codes%20Metadata.html">Event codes metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Eye%20Tracking%20Metadata.html">Eye tracking metadata element schema</a></li>
-<li class="toctree-l2"><a class="reference internal" href="In2PB%20Metadata.html">In2pb info element schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="In2PB%20Metadata.html">In2pb metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Probe%20Metadata.html">Probe metadata element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Session%20Metadata.html">Session metadata element schema</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Subject-General.html">Subject element schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Subject-General.html">Subject-general element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Subject-Surgery.html">Subject-surgery element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Subject-Training.html">Subject-training element schema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Task%20Metadata.html">Task metadata element schema</a></li>
@@ -355,7 +355,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Data acquisition system metadata element schema</h1>
+    <h1>Acquisition system metadata element schema</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -373,7 +373,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#institution-name">Institution Name</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#institution-address">Institution Address</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-frequency">Sampling Frequency</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#device-serial-number">Device Serial Number</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serial-numbers">Serial Numbers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-suite">Software Suite</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-suite-version">Software Suite Version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#daq-system-creator">DAQ System Creator</a></li>
@@ -389,9 +389,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="data-acquisition-system-metadata-element-schema">
-<h1>Data acquisition system metadata element schema<a class="headerlink" href="#data-acquisition-system-metadata-element-schema" title="Link to this heading">#</a></h1>
-<p><strong>Description:</strong> Data acquisition system metadata element schema generated by the CEDAR Template Editor 2.6.54</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="acquisition-system-metadata-element-schema">
+<h1>Acquisition system metadata element schema<a class="headerlink" href="#acquisition-system-metadata-element-schema" title="Link to this heading">#</a></h1>
+<p><strong>Description:</strong> Acquisition system metadata element schema generated by the CEDAR Template Editor 2.6.56</p>
 <section id="power-line-frequency">
 <h2>Power Line Frequency<a class="headerlink" href="#power-line-frequency" title="Link to this heading">#</a></h2>
 <p><strong>Label:</strong> powerLineFrequency</p>
@@ -399,7 +399,7 @@ document.write(`
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> numeric</p>
 <p><strong>Unit of Measure:</strong> Hz</p>
-<p><strong>Value Relation Links:</strong> <a class="reference external" href="http://www.purl.org/NDDO/NDDO_10000379">Link</a> <details></p>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/2e516a8d-ab63-4008-8029-3e6dcd86a5b9">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.metadatacenter.org/core/TemplateField&quot;</span><span class="p">,</span>
@@ -437,7 +437,7 @@ document.write(`
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;powerLineFrequency field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;powerLineFrequency field schema generated by the CEDAR Template Editor 2.6.54&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;powerLineFrequency field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;numeric&quot;</span>
 <span class="w">  </span><span class="p">},</span>
@@ -470,14 +470,17 @@ document.write(`
 <span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;powerLineFrequency&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Frequency (in Hz) of the power line at the setup location.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Power Line Frequency&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/704b9bb1-f40a-4dbc-841a-e72f383f2959&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;skos:altLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;bids_PowerLineFrequency&quot;</span>
+<span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
 <span class="p">}</span>
 </pre></div>
@@ -486,11 +489,11 @@ document.write(`
 </section>
 <section id="manufacturer">
 <h2>Manufacturer<a class="headerlink" href="#manufacturer" title="Link to this heading">#</a></h2>
-<p><strong>Label:</strong> ephysSetupManufacturer</p>
-<p><strong>Description:</strong> Manufacturer of the ephys system (e.g. “OpenEphys”, “Alphaomega”,”Blackrock”)</p>
+<p><strong>Label:</strong> manufacturer</p>
+<p><strong>Description:</strong> Manufacturer of the acquisition system (e.g. “OpenEphys”, “Alphaomega”,”Blackrock”)</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> textfield</p>
-<p><strong>Value Relation Links:</strong> <a class="reference external" href="http://schema.org/manufacturer">Link</a> <details></p>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/e06a44bb-a6ac-4d98-9ec3-25332127f85b">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.metadatacenter.org/core/TemplateField&quot;</span><span class="p">,</span>
@@ -527,8 +530,8 @@ document.write(`
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ephysSetupManufacturer field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ephysSetupManufacturer field schema generated by the CEDAR Template Editor 2.6.54&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;manufacturer field schema&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;manufacturer field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span>
 <span class="w">  </span><span class="p">},</span>
@@ -569,16 +572,19 @@ document.write(`
 <span class="w">  </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="s2">&quot;@value&quot;</span>
 <span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ephysSetupManufacturer&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Manufacturer of the ephys system (e.g. \&quot;OpenEphys\u201d, \u201cAlphaomega\&quot;,\u201dBlackrock\u201d)&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;manufacturer&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Manufacturer of the acquisition system (e.g. \&quot;OpenEphys\u201d, \u201cAlphaomega\&quot;,\u201dBlackrock\u201d)&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Manufacturer&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/c1385cdc-662a-4bca-84ab-c626f8abaa90&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;skos:altLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;bids_Manufacturer&quot;</span>
+<span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
 <span class="p">}</span>
 </pre></div>
@@ -591,7 +597,7 @@ document.write(`
 <p><strong>Description:</strong> Name of the data acquisition system used.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> textfield</p>
-<p><strong>Value Relation Links:</strong> <a class="reference external" href="http://schema.org/name">Link</a> <details></p>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/10554adf-799b-4301-b56f-ae1764681bd0">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.metadatacenter.org/core/TemplateField&quot;</span><span class="p">,</span>
@@ -629,7 +635,7 @@ document.write(`
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;manufacturerModelName field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;manufacturerModelName field schema generated by the CEDAR Template Editor 2.6.54&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;manufacturerModelName field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span>
 <span class="w">  </span><span class="p">},</span>
@@ -672,14 +678,17 @@ document.write(`
 <span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;manufacturerModelName&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Name of the data acquisition system used.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Manufacturer Model Name&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/68e484cb-6edb-46bb-8777-3b77e4eea958&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;skos:altLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;bids_ManufacturerModelName&quot;</span>
+<span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
 <span class="p">}</span>
 </pre></div>
@@ -692,7 +701,7 @@ document.write(`
 <p><strong>Description:</strong> Version of the data acquisition system.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> textfield</p>
-<p><strong>Value Relation Links:</strong> <a class="reference external" href="http://purl.org/dc/terms/hasVersion">Link</a> <details></p>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/3c85cc20-1478-4ba7-a465-d973568bd919">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.metadatacenter.org/core/TemplateField&quot;</span><span class="p">,</span>
@@ -730,7 +739,7 @@ document.write(`
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;manufacturerModelVersion field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;manufacturerModelVersion field schema generated by the CEDAR Template Editor 2.6.54&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;manufacturerModelVersion field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span>
 <span class="w">  </span><span class="p">},</span>
@@ -773,14 +782,17 @@ document.write(`
 <span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;manufacturerModelVersion&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Version of the data acquisition system.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Manufacturer Model Version&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/ca019f99-a008-4046-b6b0-12af23411860&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;skos:altLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;bids_ManufacturerModelVersion&quot;</span>
+<span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
 <span class="p">}</span>
 </pre></div>
@@ -790,10 +802,10 @@ document.write(`
 <section id="recording-setup-custom-name">
 <h2>Recording Setup Custom Name<a class="headerlink" href="#recording-setup-custom-name" title="Link to this heading">#</a></h2>
 <p><strong>Label:</strong> recordingSetupCustomName</p>
-<p><strong>Description:</strong> Custom name of the data acquis</p>
+<p><strong>Description:</strong> Custom name of the data acquisition system.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> textfield</p>
-<p><strong>Value Relation Links:</strong> <a class="reference external" href="http://purl.obolibrary.org/obo/ncbitaxon#common_name">Link</a> <details></p>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/c9e2acef-5efb-4a30-9a80-24369429a71a">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.metadatacenter.org/core/TemplateField&quot;</span><span class="p">,</span>
@@ -831,7 +843,7 @@ document.write(`
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;recordingSetupCustomName field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;recordingSetupCustomName field schema generated by the CEDAR Template Editor 2.6.54&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;recordingSetupCustomName field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span>
 <span class="w">  </span><span class="p">},</span>
@@ -873,15 +885,18 @@ document.write(`
 <span class="w">    </span><span class="s2">&quot;@value&quot;</span>
 <span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;recordingSetupCustomName&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Custom name of the data acquis&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Custom name of the data acquisition system.&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Recording Setup Custom Name&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/3fe69982-5aa7-4ec4-a0fd-9a3fd4c485fa&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;skos:altLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;bids_RecordingSetup&quot;</span>
+<span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
 <span class="p">}</span>
 </pre></div>
@@ -894,7 +909,7 @@ document.write(`
 <p><strong>Description:</strong> The name of the institution where data is recorded.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> textfield</p>
-<p><strong>Value Relation Links:</strong> <a class="reference external" href="http://purl.org/twc/HHEARP_00003">Link</a> <details></p>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/475a62ef-c23b-41e8-a6e6-ea37935c9957">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.metadatacenter.org/core/TemplateField&quot;</span><span class="p">,</span>
@@ -932,7 +947,7 @@ document.write(`
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;institutionName field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;institutionName field schema generated by the CEDAR Template Editor 2.6.54&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;institutionName field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span>
 <span class="w">  </span><span class="p">},</span>
@@ -975,14 +990,17 @@ document.write(`
 <span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;institutionName&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The name of the institution where data is recorded.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Institution Name&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/dd192198-5f5b-4ce3-b879-acdf1169e048&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;skos:altLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;bids_InstitutionName&quot;</span>
+<span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
 <span class="p">}</span>
 </pre></div>
@@ -995,7 +1013,7 @@ document.write(`
 <p><strong>Description:</strong> The address of the institution where data is recorded.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> textfield</p>
-<p><strong>Value Relation Links:</strong> <a class="reference external" href="http://schema.org/address">Link</a> <details></p>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/c2fbfc95-2564-4ce7-8ecb-e5d74ee77693">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.metadatacenter.org/core/TemplateField&quot;</span><span class="p">,</span>
@@ -1033,7 +1051,7 @@ document.write(`
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;institutionAddress field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;institutionAddress field schema generated by the CEDAR Template Editor 2.6.54&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;institutionAddress field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span>
 <span class="w">  </span><span class="p">},</span>
@@ -1076,14 +1094,17 @@ document.write(`
 <span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;institutionAddress&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The address of the institution where data is recorded.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Institution Address&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/fa911689-6918-4ec4-bc1b-f9777c254791&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;skos:altLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;bids_InstitutionAddress&quot;</span>
+<span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
 <span class="p">}</span>
 </pre></div>
@@ -1093,11 +1114,11 @@ document.write(`
 <section id="sampling-frequency">
 <h2>Sampling Frequency<a class="headerlink" href="#sampling-frequency" title="Link to this heading">#</a></h2>
 <p><strong>Label:</strong> samplingFrequency</p>
-<p><strong>Description:</strong> Internal (maximum) sampling frequency of the AR recording.</p>
-<p><strong>Required:</strong> No</p>
+<p><strong>Description:</strong> Internal (maximum) sampling frequency of the recording in Hz.</p>
+<p><strong>Required:</strong> Yes</p>
 <p><strong>Input Type:</strong> numeric</p>
 <p><strong>Unit of Measure:</strong> Hz</p>
-<p><strong>Value Relation Links:</strong> <a class="reference external" href="http://schema.org/frequency">Link</a> <details></p>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/2e39f306-8558-46c3-b3d6-1b007cdc8b06">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.metadatacenter.org/core/TemplateField&quot;</span><span class="p">,</span>
@@ -1135,12 +1156,12 @@ document.write(`
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;samplingFrequency field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;samplingFrequency field schema generated by the CEDAR Template Editor 2.6.54&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;samplingFrequency field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;numeric&quot;</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;_valueConstraints&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;requiredValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;requiredValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;numberType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xsd:decimal&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;unitOfMeasure&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hz&quot;</span>
 <span class="w">  </span><span class="p">},</span>
@@ -1167,33 +1188,40 @@ document.write(`
 <span class="w">    </span><span class="s2">&quot;@type&quot;</span>
 <span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;samplingFrequency&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Internal (maximum) sampling frequency of the AR recording.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Internal (maximum) sampling frequency of the recording in Hz.&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Sampling Frequency&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/10a2844c-7949-4dee-978c-3ed228efea15&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;skos:altLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;bids_SamplingFrequency&quot;</span>
+<span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 </details>
 </section>
-<section id="device-serial-number">
-<h2>Device Serial Number<a class="headerlink" href="#device-serial-number" title="Link to this heading">#</a></h2>
-<p><strong>Label:</strong> deviceSerialNumber</p>
+<section id="serial-numbers">
+<h2>Serial Numbers<a class="headerlink" href="#serial-numbers" title="Link to this heading">#</a></h2>
+<p><strong>Label:</strong> serialNumbers</p>
 <p><strong>Description:</strong> The serial number of the components of the setup, recommended to add serial numbers and versions of ALL components constituting the setup.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> Not specified</p>
-<details>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/4be69372-10dd-4a22-a972-ff8b33ca721b">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;array&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;minItems&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;skos:altLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;bids_SerialNumbers&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;minItems&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.metadatacenter.org/core/TemplateField&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">      </span><span class="nt">&quot;xsd&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://www.w3.org/2001/XMLSchema#&quot;</span><span class="p">,</span>
@@ -1227,22 +1255,61 @@ document.write(`
 <span class="w">        </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@id&quot;</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;deviceSerialNumber field schema&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;deviceSerialNumber field schema generated by the CEDAR Template Editor 2.6.54&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;serialNumbers field schema&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;serialNumbers field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;attribute-value&quot;</span>
+<span class="w">      </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;deviceSerialNumber&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The serial number of the components of the setup, recommended to add serial numbers and versions of ALL components constituting the setup.&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;_valueConstraints&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;requiredValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;oneOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">          </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;format&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;uri&quot;</span>
+<span class="w">          </span><span class="p">},</span>
+<span class="w">          </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;array&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;minItems&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">              </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">              </span><span class="nt">&quot;format&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;uri&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;uniqueItems&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">          </span><span class="p">}</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;@value&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">          </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="s2">&quot;null&quot;</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;rdfs:label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">          </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="s2">&quot;null&quot;</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">&quot;@value&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Device Serial Number&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/32587dc7-d2e5-4bff-adf2-696eca396b45&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;serialNumbers&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The serial number of the components of the setup, recommended to add serial numbers and versions of ALL components constituting the setup.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Serial Numbers&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;skos:altLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">&quot;bids_SerialNumbers&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/39c4a3f7-040a-4d92-a085-b8ca3f4d1a53&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
@@ -1256,7 +1323,7 @@ document.write(`
 <p><strong>Description:</strong> Software suite used for data acquisition.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> textfield</p>
-<p><strong>Value Relation Links:</strong> <a class="reference external" href="http://purl.obolibrary.org/obo/ERO_0000482">Link</a> <details></p>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/230e5aba-7f66-49a4-afed-d3a0566acc21">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.metadatacenter.org/core/TemplateField&quot;</span><span class="p">,</span>
@@ -1294,12 +1361,13 @@ document.write(`
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;usesSoftwareSuite field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;usesSoftwareSuite field schema generated by the CEDAR Template Editor 2.6.54&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;usesSoftwareSuite field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;_valueConstraints&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;requiredValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">    </span><span class="nt">&quot;requiredValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;maxLength&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-1</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
@@ -1337,14 +1405,17 @@ document.write(`
 <span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;usesSoftwareSuite&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Software suite used for data acquisition.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Software Suite&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/12b64354-8d45-4a4f-b3e9-2177a06e382c&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;skos:altLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;bids_Software&quot;</span>
+<span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
 <span class="p">}</span>
 </pre></div>
@@ -1353,100 +1424,110 @@ document.write(`
 </section>
 <section id="software-suite-version">
 <h2>Software Suite Version<a class="headerlink" href="#software-suite-version" title="Link to this heading">#</a></h2>
-<p><strong>Label:</strong> softwareVersion</p>
-<p><strong>Description:</strong> Version of the acquisition software.</p>
+<p><strong>Label:</strong> softwareVersions</p>
+<p><strong>Description:</strong> Version of the acquisition softwares.</p>
 <p><strong>Required:</strong> No</p>
-<p><strong>Input Type:</strong> textfield</p>
-<p><strong>Value Relation Links:</strong> <a class="reference external" href="http://schema.org/softwareVersion">Link</a> <details></p>
+<p><strong>Input Type:</strong> Not specified</p>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/e8e7cb08-5574-4020-86f7-91dc60e75445">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.metadatacenter.org/core/TemplateField&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;xsd&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://www.w3.org/2001/XMLSchema#&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;pav&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://purl.org/pav/&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;bibo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://purl.org/ontology/bibo/&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;oslc&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://open-services.net/ns/core#&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://schema.org/&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;skos&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://www.w3.org/2004/02/skos/core#&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xsd:string&quot;</span>
+<span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;array&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;skos:altLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;bids_SoftwareVersions&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;minItems&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/580e9154-8a4f-42a9-b527-f4da43866e3e&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.metadatacenter.org/core/TemplateField&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;xsd&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://www.w3.org/2001/XMLSchema#&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;pav&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://purl.org/pav/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;bibo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://purl.org/ontology/bibo/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;oslc&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://open-services.net/ns/core#&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://schema.org/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;skos&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://www.w3.org/2004/02/skos/core#&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xsd:string&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xsd:string&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xsd:string&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;skos:altLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xsd:string&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xsd:dateTime&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@id&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xsd:dateTime&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@id&quot;</span>
+<span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xsd:string&quot;</span>
+<span class="w">    </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;softwareVersions field schema&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;softwareVersions field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xsd:string&quot;</span>
+<span class="w">    </span><span class="nt">&quot;_valueConstraints&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;requiredValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;skos:altLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xsd:string&quot;</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xsd:dateTime&quot;</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@id&quot;</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xsd:dateTime&quot;</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@id&quot;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;softwareVersion field schema&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;softwareVersion field schema generated by the CEDAR Template Editor 2.6.54&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nt">&quot;_valueConstraints&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;requiredValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;oneOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="nt">&quot;format&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;uri&quot;</span>
-<span class="w">        </span><span class="p">},</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;array&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="nt">&quot;minItems&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<span class="w">          </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;oneOf&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">          </span><span class="p">{</span>
 <span class="w">            </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
 <span class="w">            </span><span class="nt">&quot;format&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;uri&quot;</span>
 <span class="w">          </span><span class="p">},</span>
-<span class="w">          </span><span class="nt">&quot;uniqueItems&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">      </span><span class="p">]</span>
+<span class="w">          </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;array&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;minItems&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">              </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">              </span><span class="nt">&quot;format&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;uri&quot;</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;uniqueItems&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">          </span><span class="p">}</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;@value&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">          </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="s2">&quot;null&quot;</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;rdfs:label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">          </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="s2">&quot;null&quot;</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;@value&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;null&quot;</span>
-<span class="w">      </span><span class="p">]</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;rdfs:label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;null&quot;</span>
-<span class="w">      </span><span class="p">]</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="s2">&quot;@value&quot;</span>
-<span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;softwareVersion&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Version of the acquisition software.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Software Suite Version&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://repo.metadatacenter.org/template-fields/580e9154-8a4f-42a9-b527-f4da43866e3e&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
+<span class="w">    </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">&quot;@value&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;softwareVersions&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Version of the acquisition softwares.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;skos:prefLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Software Suite Version&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;skos:altLabel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">&quot;bids_SoftwareVersions&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://json-schema.org/draft-04/schema#&quot;</span>
+<span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -1458,7 +1539,7 @@ document.write(`
 <p><strong>Description:</strong> Name of the person(s) who set up the system.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> Not specified</p>
-<p><strong>Value Relation Links:</strong> <a class="reference external" href="http://purl.org/dc/elements/1.1/creator">Link</a> <details></p>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/3bcecd77-5871-4654-a954-07a0d9f771c5">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;array&quot;</span><span class="p">,</span>
@@ -1499,7 +1580,7 @@ document.write(`
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;systemCreator field schema&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;systemCreator field schema generated by the CEDAR Template Editor 2.6.54&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;systemCreator field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">      </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span>
 <span class="w">    </span><span class="p">},</span>
@@ -1541,9 +1622,9 @@ document.write(`
 <span class="w">      </span><span class="s2">&quot;@value&quot;</span>
 <span class="w">    </span><span class="p">],</span>
 <span class="w">    </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;systemCreator&quot;</span><span class="p">,</span>
@@ -1563,7 +1644,7 @@ document.write(`
 <p><strong>Description:</strong> Name of the person(s) who maintains the system.</p>
 <p><strong>Required:</strong> No</p>
 <p><strong>Input Type:</strong> Not specified</p>
-<p><strong>Value Relation Links:</strong> <a class="reference external" href="http://semantic-dicom.org/dcm#ResponsiblePerson">Link</a> <details></p>
+<p><strong>Value Relation Links:</strong> <a class="reference external" href="https://schema.metadatacenter.org/properties/07a4d6c7-51fb-45fa-9e1b-70c750d1cf60">Link</a> <details></p>
 <summary>Field Schema JSON</summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;array&quot;</span><span class="p">,</span>
@@ -1604,7 +1685,7 @@ document.write(`
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;systemMaintainer field schema&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;systemMaintainer field schema generated by the CEDAR Template Editor 2.6.54&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;systemMaintainer field schema generated by the CEDAR Template Editor 2.6.56&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;_ui&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">      </span><span class="nt">&quot;inputType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;textfield&quot;</span>
 <span class="w">    </span><span class="p">},</span>
@@ -1646,9 +1727,9 @@ document.write(`
 <span class="w">      </span><span class="s2">&quot;@value&quot;</span>
 <span class="w">    </span><span class="p">],</span>
 <span class="w">    </span><span class="nt">&quot;additionalProperties&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;pav:createdOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;pav:createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-03-25T08:52:04-07:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;pav:lastUpdatedOn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-05-14T01:28:41-07:00&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;oslc:modifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://metadatacenter.org/users/f3d8067f-c204-45c0-8fb1-8393e486593c&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;schema:schemaVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.6.0&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;systemMaintainer&quot;</span><span class="p">,</span>
@@ -1736,7 +1817,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#institution-name">Institution Name</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#institution-address">Institution Address</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-frequency">Sampling Frequency</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#device-serial-number">Device Serial Number</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#serial-numbers">Serial Numbers</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-suite">Software Suite</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-suite-version">Software Suite Version</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#daq-system-creator">DAQ System Creator</a></li>

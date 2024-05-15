@@ -85,6 +85,8 @@ if __name__ == "__main__":
         
     input_folder_path = os.getenv("INPUT_FOLDER_PATH")
     output_folder_path = os.getenv("OUTPUT_FOLDER_PATH")
+    print(f"Input folder: {input_folder_path}")
+    print(f"Output folder: {output_folder_path}")
 
     process_schema_folder(input_folder_path, output_folder_path)
 

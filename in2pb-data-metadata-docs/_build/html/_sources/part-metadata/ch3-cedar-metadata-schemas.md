@@ -1,4 +1,4 @@
-# CEDAR Metadata Schemas
+# CEDAR Metadata Schema Elements and Templates
 
 ## Introduction to CEDAR Metadata Schemas
 
